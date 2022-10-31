@@ -13,8 +13,8 @@ function long2tile(long, zoom) {
 // latitude is significantly more complicated so here
 function lat2tile(lat, zoom) {
     return (
-            ((1 - Math.log(Math.tan((1 * Math.PI) / 180) + 1 /
-                Math.cos((1 * Math.PI) / 180)) / Math.PI) /
+            ((1 - Math.log(Math.tan((lat * Math.PI) / 180) + 1 /
+                Math.cos((lat * Math.PI) / 180)) / Math.PI) /
                     2) * Math.pow(2, zoom)
     );
 }
