@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "get-tiles": "budo get-tiles.js --live -- -t brfs"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,9 @@
   },
   "homepage": "https://github.com/Gregory-DelCarlo/Map-Shading#readme",
   "dependencies": {
+    "brfs": "^2.0.2",
+    "budo": "^11.8.4",
+    "gl-matrix": "^3.4.3",
     "regl": "^2.1.0"
   }
 }

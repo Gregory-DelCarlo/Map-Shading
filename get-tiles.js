@@ -16,9 +16,8 @@ async function main() {
 
     // load image from mapbox
     const image = await utils.loadImage(
-            `https://api.mapbox.com/v4/mapbox.satellite/${zoom}/${tLong}/${tLat}.pngraw?access_token=${MAPBOX_KEY}`
+            `https://api.mapbox.com/v4/mapbox.satellite/${zoom}/${tLong}/${tLat}@2x.pngraw?access_token=${MAPBOX_KEY}`
     );
-
     // add our tile to the page
     document.body.appendChild(image);
 }
