@@ -1,0 +1,22 @@
+{
+  "name": "map-shading",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gregory-DelCarlo/Map-Shading.git"
+  },
+  "author": "Gregory Del Carlo",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Gregory-DelCarlo/Map-Shading/issues"
+  },
+  "homepage": "https://github.com/Gregory-DelCarlo/Map-Shading#readme",
+  "dependencies": {
+    "regl": "^2.1.0"
+  }
+}
