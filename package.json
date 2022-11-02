@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "get-tiles": "budo get-tiles.js --live -- -t brfs"
+      "render-map": "budo render.js --live -- -t brfs",
+    "get-tile": "budo get-tile.js --live -- -t brfs",
   },
   "repository": {
     "type": "git",

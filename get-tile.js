@@ -4,7 +4,7 @@ const utils = require("./utils");
 const fs = require("fs");
 const MAPBOX_KEY = fs.readFileSync("map.key").toString();
 
-async function main() {
+function get_tile() {
     // define zoom and position of map tile
     const zoom = 10;
     // somewhere in the grand canyon
@@ -18,8 +18,12 @@ async function main() {
     const image = await utils.loadImage(
             `https://api.mapbox.com/v4/mapbox.satellite/${zoom}/${tLong}/${tLat}@2x.pngraw?access_token=${MAPBOX_KEY}`
     );
-    // add our tile to the page
-    document.body.appendChild(image);
+
+    return image;
+//    // add our tile to the page
+//    document.body.appendChild(image);
 }
 
-main();
+//get_tile();
+
+module.exports = {test: "Hello?", get_tile};
